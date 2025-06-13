@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure pages start at top */
+body {
+  overflow-x: hidden;
+}
+
+/* Force scroll to top on route change */
+#root {
+  scroll-behavior: smooth;
+}
